@@ -1,3 +1,4 @@
+kotlin
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -16,12 +17,14 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner =
+            "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // STEP 2: Enable View Binding
+    // Enable View Binding and Data Binding
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 
     buildTypes {
